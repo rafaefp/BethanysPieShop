@@ -1,3 +1,4 @@
+using BethanysPieShop.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +25,8 @@ namespace BethanysPieShop
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddRazorPages();
+            services.AddScoped<IPieRepository, MockPieRepository>();
+            services.AddScoped<ICategoryRepository, MockCategoryRepository>();            
             services.AddControllersWithViews();
         }
 
