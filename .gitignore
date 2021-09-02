@@ -361,11 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-# Jquery files
-core.js
-jquery.js
-
-# Bootstrap files
-bootstrap.js
-npm.js
